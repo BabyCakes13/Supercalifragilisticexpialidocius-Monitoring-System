@@ -22,7 +22,7 @@ class RabbitConnection:
         print("Packet was sent." + packet)
 
     def stop_connection(self):
-        """Stopps the connectionn to the RabbitMQ server."""
+        """Stops the connection to the RabbitMQ server."""
 
         print("Closed connection.")
         self.channel.close()

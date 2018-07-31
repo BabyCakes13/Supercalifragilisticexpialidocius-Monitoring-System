@@ -21,6 +21,6 @@ def get_configuration_file_re():
         r"\nCPU_PERCENT=(TRUE|FALSE)" \
         r"\nMEMORY_INFO=(TRUE|FALSE)" \
         r"\nCPU_STATS=(TRUE|FALSE)" \
-        r"\nSEND_TIME=5" \
+        r"\nSEND_TIME=([1-9]|[1-9][0-9])" \
         r"\nADDRESS=(localhost)" \
         r"\nPORT=(\d{1,5})"

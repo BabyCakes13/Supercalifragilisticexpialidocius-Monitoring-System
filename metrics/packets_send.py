@@ -1,10 +1,11 @@
 import json
 from threading import Timer
 from socket import gaierror
+from datetime import datetime
 from metrics.rabbit_connection import RabbitConnection
 from metrics.collect_metrics import Metrics
-from files.read_configuration_data import ConfigurationFileReader
-from initialise.create_unique_id import create_unique_id
+from configuration.read_configuration_data import ConfigurationFileReader
+from configuration.create_unique_id import create_unique_id
 
 
 class PacketHandler:
@@ -12,7 +13,7 @@ class PacketHandler:
     based on the configured send time."""
 
     def __init__(self):
-        """Creates the dictionary containing the collected metrics, unique id.
+        """Creates the dictionary containing the collected metrics, unique id and the time when the object was sent.
         Uses the given port and address to connect to the rabbit queue and sends the metrics dictionary."""
 
         self.metrics = Metrics()
@@ -35,10 +36,15 @@ class PacketHandler:
 
     def add_metrics_to_packet(self):
         """Updates the send time and metrics. Calls itself in a loop based on the given send_time from config.txt.
+        Adds the time when the package was sent and updates it.
         Send the packed formed of the metrics and id to the rabbit mq queue"""
 
         self.send_time = self.reader.get_send_time()
         self.metrics_values = self.metrics.get_metrics_dictionary()
+
+        sent_time = str(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+        self.metrics_values['send_time'] = str(sent_time)
+
         self.connection.send_packet(json.dumps(self.metrics_values, indent=1))
 
         pid = Timer(int(self.send_time),

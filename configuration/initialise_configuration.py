@@ -1,8 +1,8 @@
 """Calls the creation and verification of the configuration file"""
-from initialise.create_configuration import CreateConfiguration
+from configuration.create_configuration import CreateConfiguration
 
 
-def initialise():
+def check_configuration():
     """Initialises the configuration file"""
 
     CreateConfiguration()

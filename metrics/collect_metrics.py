@@ -1,4 +1,4 @@
-from files.read_configuration_data import ConfigurationFileReader
+from configuration.read_configuration_data import ConfigurationFileReader
 import psutil
 import os
 

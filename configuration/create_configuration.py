@@ -11,10 +11,11 @@ class CreateConfiguration:
         If the config.txt file already exists and it valid, then it does nothing.
         Else, it creates a new default configuration file."""
 
-        self.root_path = os.path.dirname(os.path.abspath(__file__))[:-11]
+        self.root_path = os.path.dirname(os.path.abspath(__file__))[:-14]
         self.config_path = os.path.join(self.root_path, "files\config.txt")
 
         if self.check_configuration() is False:
+            print("False")
             self.setup_configuration_file()
 
     def setup_configuration_file(self):
