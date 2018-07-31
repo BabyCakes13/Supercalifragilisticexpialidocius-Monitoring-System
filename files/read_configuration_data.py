@@ -37,3 +37,21 @@ class ConfigurationFileReader:
 
         f_config.close()
         return metrics
+
+    def get_address(self):
+
+        f_config = open(self.config_path, "r")
+
+        address = re.search(r"ADDRESS=localhost", f_config.read()).group()[-9:]
+
+        f_config.close()
+        return address
+
+    def get_port(self):
+
+        f_config = open(self.config_path, "r")
+
+        port = re.search(r"PORT=(\d{1,5})", f_config.read()).group()[-4:]
+
+        f_config.close()
+        return port

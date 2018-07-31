@@ -12,17 +12,13 @@ class Metrics:
         reader = ConfigurationFileReader()
 
         self.metrics = reader.get_metrics()
-        self.send_time = reader.get_send_time
+        self.send_time = reader.get_send_time()
         self.metric_types = {}
         self.metric_functions = [self.get_disk_usage,
                                  self.get_cpu_percent,
                                  self.get_memory_info,
                                  self.get_cpu_stats]
 
-        for index in range(len(self.metric_functions)):
-            self.metric_functions[index]()
-
-        print(self.metric_types)
 
     def get_disk_usage(self):
         """Gets the disk usage information"""
@@ -39,3 +35,12 @@ class Metrics:
     def get_cpu_stats(self):
         """Gets cpu status information"""
         self.metric_types['cpu_stats'] = psutil.cpu_stats()
+
+    def get_metrics_dictionary(self):
+
+        for index in range(len(self.metric_functions)):
+            if self.metrics[index] == "TRUE":
+                self.metric_functions[index]()
+
+        return self.metric_types
+

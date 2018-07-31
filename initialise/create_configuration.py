@@ -37,5 +37,5 @@ class CreateConfiguration:
 
         if os.path.isfile(self.config_path) and self.validate_configuration_file() is True:
             return True
-
-        return False
+        else:
+            return False
