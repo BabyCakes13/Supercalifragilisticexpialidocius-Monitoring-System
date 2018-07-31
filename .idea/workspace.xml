@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c228272e-cc4d-4578-8b8c-6bed381c218f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/initialise/create_unique_id.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics/packets_send.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics/rabbit_connection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/TestCreateConfiguration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/config.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/read_configuration_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/files/read_configuration_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/files/strings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/initialise/create_configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/initialise/create_configuration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metrics/collect_metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/metrics/collect_metrics.py" afterDir="false" />
-    </list>
+    <list default="true" id="c228272e-cc4d-4578-8b8c-6bed381c218f" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,8 +53,8 @@
       <file leaf-file-name="packets_send.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/metrics/packets_send.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="414">
+              <caret line="44" column="55" lean-forward="true" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -296,6 +283,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.21289062" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -503,8 +491,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/metrics/packets_send.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="414">
+          <caret line="44" column="55" lean-forward="true" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
