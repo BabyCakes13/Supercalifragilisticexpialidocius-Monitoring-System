@@ -39,6 +39,7 @@ class ConfigurationFileReader:
         return metrics
 
     def get_address(self):
+        """Returns the address on which the rabbitmq server connects. It is localhost by default."""
 
         f_config = open(self.config_path, "r")
 
@@ -48,6 +49,7 @@ class ConfigurationFileReader:
         return address
 
     def get_port(self):
+        """Returns the port which the rabbitmq server uses to connect. Default 5672."""
 
         f_config = open(self.config_path, "r")
 

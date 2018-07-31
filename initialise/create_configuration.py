@@ -7,6 +7,9 @@ class CreateConfiguration:
     """Class which handles the creation and validity of the configuration file."""
 
     def __init__(self):
+        """Keeps the path to the config.txt file in config_path.
+        If the config.txt file already exists and it valid, then it does nothing.
+        Else, it creates a new default configuration file."""
 
         self.root_path = os.path.dirname(os.path.abspath(__file__))[:-11]
         self.config_path = os.path.join(self.root_path, "files\config.txt")

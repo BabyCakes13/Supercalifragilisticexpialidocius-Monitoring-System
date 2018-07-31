@@ -1,7 +1,13 @@
 """Main module, this starts the application"""
 
 from initialise.initialise_configuration import initialise
-from metrics import collect_metrics, packets_send
+from metrics import packets_send
 
-initialise()
-packets_send.PacketHandler()
+class Main():
+
+    def __init__(self):
+
+        initialise()
+        packets_send.PacketHandler()
+
+

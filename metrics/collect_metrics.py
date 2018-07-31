@@ -37,6 +37,7 @@ class Metrics:
         self.metric_types['cpu_stats'] = psutil.cpu_stats()
 
     def get_metrics_dictionary(self):
+        """Takes the metrics on the machine for each TRUE metric in the configuration file."""
 
         for index in range(len(self.metric_functions)):
             if self.metrics[index] == "TRUE":
