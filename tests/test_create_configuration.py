@@ -6,11 +6,12 @@ from files.strings import get_configuration_file_form
 
 
 class TestCreateConfigurationFile(unittest.TestCase):
+    """Test which verifies if the configuration file is correctly created and verified."""
 
     def setUp(self):
 
         self.root_path = os.path.dirname(os.path.abspath(__file__))[:-5]
-        self.config_path = os.path.join(self.root_path, "files\config.txt")
+        self.config_path = os.path.join(self.root_path, "files\\config.txt")
 
         self.f_config = open(self.config_path, "r+")
 
@@ -36,7 +37,8 @@ class TestCreateConfigurationFile(unittest.TestCase):
         self.f_config.close()
 
     def test_check_configuration(self):
-        """Tests if the check_configuration() function creates, verifies and writes the file correctly."""
+        """Tests if the check_configuration() function creates,
+        verifies and writes the file correctly."""
 
         self.test.check_configuration()
 

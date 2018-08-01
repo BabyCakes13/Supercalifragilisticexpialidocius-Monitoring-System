@@ -1,3 +1,4 @@
+"""Module which creates the config.txt file if it does not exist or it's invalid."""
 import os
 import re
 from files.strings import get_configuration_file_form, get_configuration_file_re
@@ -12,7 +13,7 @@ class CreateConfiguration:
         Else, it creates a new default configuration file."""
 
         self.root_path = os.path.dirname(os.path.abspath(__file__))[:-14]
-        self.config_path = os.path.join(self.root_path, "files\config.txt")
+        self.config_path = os.path.join(self.root_path, "files\\config.txt")
 
         if self.check_configuration() is False:
             self.setup_configuration_file()
@@ -30,22 +31,10 @@ class CreateConfiguration:
 
         f_config = open(self.config_path, "r")
 
-        if re.search(get_configuration_file_re(), f_config.read()) is None:
-
-            f_config.close()
-            return False
-
-        else:
-
-            f_config.close()
-            return True
-
-
+        return bool(re.search(get_configuration_file_re(), f_config.read()))
 
     def check_configuration(self):
-        """Checks to see if the configuration file already exists and it's valid, and creates another if it doesn't"""
+        """Checks to see if the configuration file already exists and it's valid
+        and creates another if it doesn't"""
 
-        if os.path.isfile(self.config_path) and self.validate_configuration_file() is True:
-            return True
-        else:
-            return False
+        return bool(os.path.isfile(self.config_path) and self.validate_configuration_file())

@@ -1,3 +1,4 @@
+"""Module which test whether the data found in the config.txt is correctly read and handled."""
 import unittest
 import os
 from configuration.read_configuration_data import ConfigurationFileReader
@@ -11,10 +12,11 @@ class TestReadConfiguration(unittest.TestCase):
     def setUpClass(cls):
         cls.reader = ConfigurationFileReader()
         cls.root_path = os.path.dirname(os.path.abspath(__file__))[:-5]
-        cls.config_path = os.path.join(cls.root_path, "files\config.txt")
+        cls.config_path = os.path.join(cls.root_path, "files\\config.txt")
 
     def test_get_metrics(self):
-        """Tests if get_metrics() reads the options of the metrics from the configuration file correctly."""
+        """Tests if get_metrics() reads the options of the metrics
+        from the configuration file correctly."""
 
         f_config = open(self.config_path, "r+")
         f_config.truncate(0)
@@ -31,7 +33,7 @@ class TestReadConfiguration(unittest.TestCase):
             f_config.write(get_configuration_file_form())
 
         self.assertEqual(self.reader.get_address(), "localhost")
-        self.assertNotEqual(self.reader.get_address(), "I'd love a coffee at this moment, but well, it's 1 am.")
+        self.assertNotEqual(self.reader.get_address(), "I'd love a coffee at this moment :(")
 
     def test_get_ip(self):
         """Tests if the get_ip() reads the ip correctly"""

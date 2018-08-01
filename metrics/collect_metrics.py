@@ -1,6 +1,9 @@
-from configuration.read_configuration_data import ConfigurationFileReader
-import psutil
+"""Module which handles reading the options for each metric from the config.txt file,
+collecting metrics from the PC and creating the metric values array"""
+
 import os
+import psutil
+from configuration.read_configuration_data import ConfigurationFileReader
 
 
 class Metrics:
@@ -18,7 +21,6 @@ class Metrics:
                                  self.get_cpu_percent,
                                  self.get_memory_info,
                                  self.get_cpu_stats]
-
 
     def get_disk_usage(self):
         """Gets the disk usage information"""
@@ -44,4 +46,3 @@ class Metrics:
                 self.metric_functions[index]()
 
         return self.metric_types
-

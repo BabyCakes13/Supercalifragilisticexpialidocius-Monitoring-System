@@ -1,8 +1,10 @@
+"""Module which handles the RabbitMQ connection, packets sending and queue handling."""
 import pika
 
 
 class RabbitConnection:
-    """Handles the connection to the RabbitMQ server, transmission of packets and closing the channel."""
+    """Handles the connection to the RabbitMQ server,
+    transmission of packets and closing the channel."""
 
     def __init__(self, address, port):
         """Creates a connection to the RabbitMQ server using the given port and address and

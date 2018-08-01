@@ -1,3 +1,5 @@
+"""Module which reads the information from the config.txt file:
+metric options, send time, ip and address."""
 import os
 import re
 
@@ -8,7 +10,7 @@ class ConfigurationFileReader:
     def __init__(self):
         """Contains the path to the config.txt file."""
 
-        self.config_path = os.path.dirname(os.path.abspath(__file__))[:-13] + "files\config.txt"
+        self.config_path = os.path.dirname(os.path.abspath(__file__))[:-13] + "files\\config.txt"
 
     def get_metrics(self):
         """Returns the chosen option for the metrics in the configuration file."""

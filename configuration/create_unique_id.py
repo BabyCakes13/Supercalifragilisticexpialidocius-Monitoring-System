@@ -1,3 +1,4 @@
+"""Creates the unique id which will represent the machine in the sent packet"""
 import uuid
 
 
