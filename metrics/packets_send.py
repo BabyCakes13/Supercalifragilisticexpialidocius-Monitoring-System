@@ -4,8 +4,8 @@ the send time set in config.txt file, the unique id representing the machine
 and the time at which each packet was sent."""
 import json
 from threading import Timer
-from socket import gaierror
 from datetime import datetime
+from files.strings import get_sent_time_format, get_data_names
 from metrics.rabbit_connection import RabbitConnection
 from metrics.collect_metrics import Metrics
 from configuration.read_configuration_data import ConfigurationFileReader
@@ -23,49 +23,39 @@ class PacketHandler:
         and sends the metrics dictionary."""
 
         self.reader = ConfigurationFileReader()
+        self.packet = {}
+        self.rabbit_connection = False
+        self.address = self.reader.get_address()
+        self.port = self.reader.get_port()
 
-        self.metrics_values = {}
-        self.send_time = ""
-        self.address = ""
-        self.port = ""
-        self.unique_id = ""
+        self.packet[get_data_names()[4]] = str(create_unique_id())
 
         self.set_packet_data()
-
-        try:
-            self.connection = RabbitConnection(address=self.address,
-                                               port=self.port)
-        except(gaierror, AttributeError, ConnectionError):
-            print("Wrong IP")
-
-        self.add_metrics_to_packet()
 
     def set_packet_data(self):
         """Stores data which is not changing in the class attributes.
         Adds the id of the machine to the sent packet."""
 
-        self.address = self.reader.get_address()
-        self.port = self.reader.get_port()
-        self.unique_id = create_unique_id()
-        self.metrics_values['unique_id'] = str(self.unique_id)
+        try:
+            self.rabbit_connection = RabbitConnection(address=self.address, port=self.port)
+        except(AttributeError, ConnectionError):
+            print("Connection Error.")
 
-    def add_metrics_to_packet(self):
+        self.send_packets()
+
+    def send_packets(self):
         """Updates the send time and metrics. Calls itself in a loop based on
         the given send_time from config.txt.
         Adds the time when the package was sent and updates it.
         Send the packed formed of the metrics and id to the rabbit mq queue"""
 
         metrics = Metrics()
+        sent_time = str(datetime.now().strftime(get_sent_time_format()))
 
-        self.send_time = self.reader.get_send_time()
-        self.metrics_values = metrics.get_metrics_dictionary()
+        self.packet.update(metrics.get_metrics_values())
+        self.packet[get_data_names()[5]] = sent_time
 
-        sent_time = str(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
-        self.metrics_values['send_time'] = str(sent_time)
+        self.rabbit_connection.send_packet(json.dumps(self.packet, indent=1))
 
-        self.connection.send_packet(json.dumps(self.metrics_values, indent=1))
-
-        pid = Timer(int(self.send_time),
-                    self.add_metrics_to_packet)
-
-        pid.start()
+        lopper = Timer(int(self.reader.get_send_time()), self.send_packets)
+        lopper.start()

@@ -24,3 +24,44 @@ def get_configuration_file_re():
         r"\nSEND_TIME=([1-9]|[1-9][0-9])" \
         r"\nADDRESS=(localhost)" \
         r"\nPORT=(\d{1,5})"
+
+def get_metrics_re():
+    """Contains the regex expression to check the validity of
+    only the metrics from the configuration file"""
+
+    return r"DISK_USAGE=(TRUE|FALSE)" \
+        r"\nCPU_PERCENT=(TRUE|FALSE)" \
+        r"\nMEMORY_INFO=(TRUE|FALSE)" \
+        r"\nCPU_STATS=(TRUE|FALSE)"
+
+
+def get_send_time_re():
+    """Contains the regex expression for the type of communication time."""
+
+    return r"SEND_TIME=[1-9][0-9]|[1-9]"
+
+
+def get_port_re():
+    """Contains the regex for the port type."""
+
+    return r"PORT=(\d{1,5})"
+
+
+def get_address_re():
+    """Contains the regex for address type."""
+
+    return r"ADDRESS=localhost"
+
+
+def get_sent_time_format():
+    """Contains the format for sent time of packet."""
+
+    return "%Y-%m-%d %H:%M:%S"
+
+
+def get_data_names():
+    """Contains the metric, id and sent time names."""
+
+    metric_names = ['Disk Usage', 'Cpu Percent', 'Memory Info', 'Cpu Stats', 'ID', 'Time']
+
+    return metric_names

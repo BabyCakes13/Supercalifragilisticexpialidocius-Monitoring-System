@@ -11,20 +11,20 @@ class RabbitConnection:
         opens a queue in which the metrics will be stored for the server to take."""
 
         connection = pika.BlockingConnection(pika.ConnectionParameters(address, port))
-        self.channel = connection.channel()
-        self.channel.queue_declare(queue='machine_connection')
+        self.rabbit_connection = connection.channel()
+        self.rabbit_connection.queue_declare(queue='metrics_queue')
 
     def send_packet(self, packet):
         """Sends given packets to the RabbitMQ queue"""
 
-        self.channel.basic_publish(exchange='',
-                                   routing_key='machine_connection',
-                                   body=packet)
+        self.rabbit_connection.basic_publish(exchange='',
+                                             routing_key='metrics_queue',
+                                             body=packet)
 
-        print("Packet was sent." + packet)
+        print("sent..." + packet)
 
     def stop_connection(self):
         """Stops the connection to the RabbitMQ server."""
 
-        print("Closed connection.")
-        self.channel.close()
+        print("connection to RabbitMQ closed...")
+        self.rabbit_connection.close()
