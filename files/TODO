@@ -20,3 +20,5 @@ TESTS - make this work
         self.assertEqual(mocker.mock_calls, expected)
 - finish testing main, collect_metrics and packets_send
 - don't send unique id all the time
+- instead of [-x:] put [x:}
+-add unique_id to config file

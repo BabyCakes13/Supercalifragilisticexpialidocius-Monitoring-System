@@ -6,7 +6,8 @@ from files.strings import get_configuration_file_form
 
 
 class TestCreateConfigurationFile(unittest.TestCase):
-    """Test which verifies if the configuration file is correctly created and verified."""
+    """Test which verifies if the configuration
+    file is correctly created and verified."""
 
     def setUp(self):
 
@@ -22,7 +23,8 @@ class TestCreateConfigurationFile(unittest.TestCase):
         self.f_config.close()
 
     def test_validate_structure(self):
-        """Tests if the validate_structure() function the file structure is correctly handled."""
+        """Tests if the validate_structure() function
+        the file structure is correctly handled."""
 
         self.f_config.write(get_configuration_file_form())
 

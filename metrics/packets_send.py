@@ -13,7 +13,8 @@ from configuration.create_unique_id import create_unique_id
 
 
 class PacketHandler:
-    """Handles the sending of the packets formed from metric values and id to the rabbit mq server,
+    """Handles the sending of the packets formed from
+    metric values and id to the rabbit mq server,
     based on the configured send time."""
 
     def __init__(self):
@@ -37,7 +38,8 @@ class PacketHandler:
         Adds the id of the machine to the sent packet."""
 
         try:
-            self.rabbit_connection = RabbitConnection(address=self.address, port=self.port)
+            self.rabbit_connection = \
+                RabbitConnection(address=self.address, port=self.port)
         except(AttributeError, ConnectionError):
             print("Connection Error.")
 

@@ -2,20 +2,22 @@
 
 
 def get_configuration_file_form():
-    """Contains the structure of the configuration file used by the client to choose the metrics"""
+    """Contains the structure of the configuration
+    file used by the client to choose the metrics"""
 
     return "DISK_USAGE=TRUE" \
         "\nCPU_PERCENT=TRUE" \
         "\nMEMORY_INFO=TRUE" \
         "\nCPU_STATS=TRUE" \
-        "\nSEND_TIME=5" \
+        "\nSEND_TIME=2" \
         "\nADDRESS=localhost" \
         "\nPORT=5672" \
 
 
 
 def get_configuration_file_re():
-    """Contain the regex expression to check the validity of the configuration file"""
+    """Contain the regex expression to check
+    the validity of the configuration file"""
 
     return r"DISK_USAGE=(TRUE|FALSE)" \
         r"\nCPU_PERCENT=(TRUE|FALSE)" \
@@ -24,6 +26,7 @@ def get_configuration_file_re():
         r"\nSEND_TIME=([1-9]|[1-9][0-9])" \
         r"\nADDRESS=(localhost)" \
         r"\nPORT=(\d{1,5})"
+
 
 def get_metrics_re():
     """Contains the regex expression to check the validity of
@@ -62,6 +65,7 @@ def get_sent_time_format():
 def get_data_names():
     """Contains the metric, id and sent time names."""
 
-    metric_names = ['Disk Usage', 'Cpu Percent', 'Memory Info', 'Cpu Stats', 'ID', 'Time']
+    metric_names = \
+        ['Disk Usage', 'Cpu Percent', 'Memory Info', 'Cpu Stats', 'ID', 'Time']
 
     return metric_names

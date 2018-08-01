@@ -1,5 +1,7 @@
-"""Module which handles reading the options for each metric from the config.txt file,
-collecting metrics from the PC and creating the metric values array"""
+"""Module which handles reading the options
+for each metric from the config.txt file,
+collecting metrics from the PC and
+creating the metric values array"""
 
 import os
 import psutil
@@ -11,7 +13,8 @@ class Metrics:
     """Class which handles the metrics"""
 
     def __init__(self):
-        """Reads the options for each metric. Creates array of metric functions."""
+        """Reads the options for each metric.
+        Creates array of metric functions."""
 
         reader = ConfigurationFileReader()
 
@@ -20,8 +23,10 @@ class Metrics:
         self.metric_values = {}
 
     def get_metrics_values(self):
-        """Gets the disk usage, cpu_percent, memory_info and cpu_stats using psutil functions.
-        Takes the metrics on the machine for each TRUE metric in the configuration file."""
+        """Gets the disk usage, cpu_percent, memory_info
+        and cpu_stats using psutil functions.
+        Takes the metrics on the machine for each
+        TRUE metric in the configuration file."""
 
         for index in range(len(self.metrics)):
             if self.metrics[index] == "TRUE":

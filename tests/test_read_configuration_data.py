@@ -1,4 +1,5 @@
-"""Module which test whether the data found in the config.txt is correctly read and handled."""
+"""Module which test whether the data found in
+the config.txt is correctly read and handled."""
 import unittest
 import os
 from configuration.read_configuration_data import ConfigurationFileReader
@@ -6,7 +7,8 @@ from files.strings import get_configuration_file_form
 
 
 class TestReadConfiguration(unittest.TestCase):
-    """Tests if the input from the configuration file is correctly handled."""
+    """Tests if the input from the configuration
+     file is correctly handled."""
 
     @classmethod
     def setUpClass(cls):
@@ -23,8 +25,11 @@ class TestReadConfiguration(unittest.TestCase):
         f_config.write(get_configuration_file_form())
         f_config.close()
 
-        self.assertEqual(self.reader.get_metrics(), ['TRUE', 'TRUE', 'TRUE', 'TRUE'])
-        self.assertNotEqual(self.reader.get_metrics(), ['FALSE', 'TRUE', 'TRUE', 'TRUE'])
+        metric_values_1 = ['TRUE', 'TRUE', 'TRUE', 'TRUE']
+        metric_values_2 = ['FALSE', 'TRUE', 'TRUE', 'TRUE']
+
+        self.assertEqual(self.reader.get_metrics(), metric_values_1)
+        self.assertNotEqual(self.reader.get_metrics(), metric_values_2)
 
     def test_get_address(self):
         """Tests if the get_address() reads the address correctly"""
@@ -33,7 +38,7 @@ class TestReadConfiguration(unittest.TestCase):
             f_config.write(get_configuration_file_form())
 
         self.assertEqual(self.reader.get_address(), "localhost")
-        self.assertNotEqual(self.reader.get_address(), "I'd love a coffee at this moment :(")
+        self.assertNotEqual(self.reader.get_address(), "bad bad bad")
 
     def test_get_ip(self):
         """Tests if the get_ip() reads the ip correctly"""

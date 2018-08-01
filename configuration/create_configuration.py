@@ -1,15 +1,19 @@
-"""Module which creates the config.txt file if it does not exist or it's invalid."""
+"""Module which creates the config.txt file if it does not exist
+or it's invalid."""
 import os
 import re
-from files.strings import get_configuration_file_form, get_configuration_file_re
+from files.strings import get_configuration_file_form
+from files.strings import get_configuration_file_re
 
 
 class CreateConfiguration:
-    """Class which handles the creation and validity of the configuration file."""
+    """Class which handles the creation and validity of
+    the configuration file."""
 
     def __init__(self):
         """Keeps the path to the config.txt file in config_path.
-        If the config.txt file already exists and it valid, then it does nothing.
+        If the config.txt file already exists and it valid,
+        then it does nothing.
         Else, it creates a new default configuration file."""
 
         self.root_path = os.path.dirname(os.path.abspath(__file__))[:-14]
@@ -19,7 +23,8 @@ class CreateConfiguration:
             self.setup_configuration_file()
 
     def setup_configuration_file(self):
-        """Creates the config.txt file, which contains the metrics which are possible to monitor.
+        """Creates the config.txt file, which contains the metrics
+        which are possible to monitor.
         In order to deactivate one metric, write FALSE instead of TRUE"""
 
         with open(self.config_path, "w+") as f_config:
@@ -37,4 +42,6 @@ class CreateConfiguration:
         """Checks to see if the configuration file already exists and it's valid
         and creates another if it doesn't"""
 
-        return bool(os.path.isfile(self.config_path) and self.validate_configuration_file())
+        is_file = os.path.isfile(self.config_path)
+        is_valid = self.validate_configuration_file()
+        return bool(is_file and is_valid)
