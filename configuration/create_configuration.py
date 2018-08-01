@@ -15,7 +15,6 @@ class CreateConfiguration:
         self.config_path = os.path.join(self.root_path, "files\config.txt")
 
         if self.check_configuration() is False:
-            print("False")
             self.setup_configuration_file()
 
     def setup_configuration_file(self):
@@ -32,9 +31,16 @@ class CreateConfiguration:
         f_config = open(self.config_path, "r")
 
         if re.search(get_configuration_file_re(), f_config.read()) is None:
+
+            f_config.close()
             return False
+
         else:
+
+            f_config.close()
             return True
+
+
 
     def check_configuration(self):
         """Checks to see if the configuration file already exists and it's valid, and creates another if it doesn't"""

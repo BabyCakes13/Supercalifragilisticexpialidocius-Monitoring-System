@@ -6,6 +6,7 @@ from metrics.rabbit_connection import RabbitConnection
 from metrics.collect_metrics import Metrics
 from configuration.read_configuration_data import ConfigurationFileReader
 from configuration.create_unique_id import create_unique_id
+from configuration.create_configuration import CreateConfiguration
 
 
 class PacketHandler:
@@ -17,6 +18,7 @@ class PacketHandler:
         Uses the given port and address to connect to the rabbit queue and sends the metrics dictionary."""
 
         self.metrics = Metrics()
+        self.config_checker = CreateConfiguration()
         self.reader = ConfigurationFileReader()
 
         self.metrics_values = self.metrics.get_metrics_dictionary()
@@ -29,8 +31,8 @@ class PacketHandler:
         try:
             self.connection = RabbitConnection(address=self.address,
                                                port=self.port)
-        except(gaierror, AttributeError):
-            print("Wrong shit")
+        except(gaierror, AttributeError, ConnectionError):
+            print("Wrong IP")
 
         self.add_metrics_to_packet()
 
@@ -39,6 +41,7 @@ class PacketHandler:
         Adds the time when the package was sent and updates it.
         Send the packed formed of the metrics and id to the rabbit mq queue"""
 
+        self.config_checker = CreateConfiguration()
         self.send_time = self.reader.get_send_time()
         self.metrics_values = self.metrics.get_metrics_dictionary()
 

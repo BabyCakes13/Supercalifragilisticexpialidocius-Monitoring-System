@@ -10,16 +10,6 @@ class ConfigurationFileReader:
 
         self.config_path = os.path.dirname(os.path.abspath(__file__))[:-13] + "files\config.txt"
 
-    def get_send_time(self):
-        """Returns the send_time variable set in configuration file."""
-
-        f_config = open(self.config_path, "r")
-
-        send_time = re.search(r"SEND_TIME=[1-9][0-9]|[1-9]", f_config.read()).group()[-2:]
-
-        f_config.close()
-        return send_time
-
     def get_metrics(self):
         """Returns the chosen option for the metrics in the configuration file."""
 
@@ -57,3 +47,13 @@ class ConfigurationFileReader:
 
         f_config.close()
         return port
+
+    def get_send_time(self):
+        """Returns the send_time variable set in configuration file."""
+
+        f_config = open(self.config_path, "r")
+
+        send_time = re.search(r"SEND_TIME=[1-9][0-9]|[1-9]", f_config.read()).group()[-2:]
+
+        f_config.close()
+        return send_time
