@@ -69,3 +69,9 @@ def get_data_names():
         ['Disk Usage', 'Cpu Percent', 'Memory Info', 'Cpu Stats', 'ID', 'Time']
 
     return metric_names
+
+
+def get_id_re():
+    """Returns the regex expression for the id form."""
+
+    return r"[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}"

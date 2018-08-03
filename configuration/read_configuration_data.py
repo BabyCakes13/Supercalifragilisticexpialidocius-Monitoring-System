@@ -12,7 +12,7 @@ class ConfigurationFileReader:
     def __init__(self):
         """Contains the path to the config.txt file."""
 
-        self.config_path = (os.path.dirname(os.path.abspath(__file__))[:-13]
+        self.config_path = (os.path.dirname(os.path.abspath(__file__))[48:]
                             + "files\\config.txt")
 
     def get_metrics(self):
@@ -36,7 +36,7 @@ class ConfigurationFileReader:
          erver connects. It is localhost by default."""
         f_config = open(self.config_path, "r")
 
-        address = re.search(get_address_re(), f_config.read()).group()[-9:]
+        address = re.search(get_address_re(), f_config.read()).group()[8:]
 
         f_config.close()
         return address
@@ -46,7 +46,7 @@ class ConfigurationFileReader:
         server uses to connect. Default 5672."""
         f_config = open(self.config_path, "r")
 
-        port = re.search(get_port_re(), f_config.read()).group()[-4:]
+        port = re.search(get_port_re(), f_config.read()).group()[5:]
 
         f_config.close()
         return port
