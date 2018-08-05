@@ -20,8 +20,7 @@ class TestReadConfiguration(unittest.TestCase):
         """Tests if get_metrics() reads the options of the metrics
         from the configuration file correctly."""
 
-        f_config = open(self.config_path, "r+")
-        f_config.truncate(0)
+        f_config = open(self.config_path, "w")
         f_config.write(get_configuration_file_form())
         f_config.close()
 
@@ -50,10 +49,10 @@ class TestReadConfiguration(unittest.TestCase):
         self.assertNotEqual(self.reader.get_port(), "666")
 
     def get_send_time(self):
-        """Tests if the get_send_time() reads the ip correctly"""
+        """Tests if the get_send_time() reads the send time correctly"""
 
         with open(self.config_path, "w") as f_config:
             f_config.write(get_configuration_file_form())
 
-        self.assertEqual(self.reader.get_send_time(), "5")
+        self.assertEqual(self.reader.get_send_time(), "2")
         self.assertNotEqual(self.reader.get_send_time(), "666")

@@ -6,7 +6,7 @@ from files.strings import get_configuration_file_form
 from files.strings import get_configuration_file_re
 
 
-class CreateConfiguration:
+class Configuration:
     """Class which handles the creation and validity of
     the configuration file."""
 
@@ -34,9 +34,17 @@ class CreateConfiguration:
     def validate_configuration_file(self):
         """Checks whether the structure of the configuration file is correct"""
 
-        f_config = open(self.config_path, "r")
+        try:
+            f_config = open(self.config_path, "r")
+        except IOError:
+            return False
 
-        return bool(re.search(get_configuration_file_re(), f_config.read()))
+        is_valid = \
+            bool(re.search(get_configuration_file_re(), f_config.read()))
+
+        f_config.close()
+
+        return is_valid
 
     def check_configuration(self):
         """Checks to see if the configuration file already exists and it's valid

@@ -12,12 +12,15 @@ class ConfigurationFileReader:
     def __init__(self):
         """Contains the path to the config.txt file."""
 
-        self.config_path = (os.path.dirname(os.path.abspath(__file__))[48:]
-                            + "files\\config.txt")
+        self.config_path = (os.path.dirname(os.path.abspath
+                            (os.path.abspath(__file__)))[:-14]
+                            + "\\files\\config.txt")
 
     def get_metrics(self):
         """Returns the chosen option for the
         metrics in the configuration file."""
+
+        print(self.config_path)
 
         f_config = open(self.config_path, "r")
 

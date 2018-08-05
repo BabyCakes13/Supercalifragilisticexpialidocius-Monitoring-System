@@ -66,7 +66,7 @@ def get_data_names():
     """Contains the metric, id and sent time names."""
 
     metric_names = \
-        ['Disk Usage', 'Cpu Percent', 'Memory Info', 'Cpu Stats', 'ID', 'Time']
+        ['Disk_Usage', 'Cpu_Percent', 'Memory_Info', 'Cpu_Stats', 'ID', 'Time']
 
     return metric_names
 

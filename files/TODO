@@ -1,1 +1,2 @@
 - finish testing main, collect_metrics and packets_send
+- test create_id: check the re and the actual id to see if the generated id is ok.
