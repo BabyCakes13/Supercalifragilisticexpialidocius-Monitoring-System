@@ -6,15 +6,15 @@ from files.strings import get_metrics_re,\
     get_send_time_re, get_port_re, get_address_re
 
 
-class ConfigurationFileReader:
+class ReaderHandler:
     """Class which handles reading metrics from the configuration file"""
 
     def __init__(self):
         """Contains the path to the config.txt file."""
 
-        self.config_path = (os.path.dirname(os.path.abspath
-                            (os.path.abspath(__file__)))[:-14]
-                            + "\\files\\config.txt")
+        path = os.path.dirname(
+            os.path.abspath(os.path.abspath(__file__)))[:-14]
+        self.config_path = path + "\\files\\config.txt"
 
     def get_metrics(self):
         """Returns the chosen option for the

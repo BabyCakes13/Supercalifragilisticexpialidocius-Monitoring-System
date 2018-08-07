@@ -5,7 +5,7 @@ creating the metric values array"""
 
 import os
 import psutil
-from configuration.read_configuration_data import ConfigurationFileReader
+from configuration.read_configuration_data import ReaderHandler
 from files.strings import get_data_names
 
 
@@ -16,7 +16,7 @@ class Metrics:
         """Reads the options for each metric.
         Creates array of metric functions."""
 
-        reader = ConfigurationFileReader()
+        reader = ReaderHandler()
 
         self.metrics = reader.get_metrics()
         self.send_time = reader.get_send_time()

@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c228272e-cc4d-4578-8b8c-6bed381c218f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/test_configuration/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_configuration/test_initialise_configuration_id.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_metrics/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration/read_configuration_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/read_configuration_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/files/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/files/TODO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/files/id.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/id.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/metrics/collect_metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/metrics/collect_metrics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_create_configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_configuration/test_create_configuration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_create_unique_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_configuration/test_create_unique_id.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_initialise_configuration_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test metrics/test_collect_metrics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_read_configuration_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_configuration/test_read_configuration_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metrics/packets_send.py" beforeDir="false" afterPath="$PROJECT_DIR$/metrics/packets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test metrics/test_collect_metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_metrics/test_collect_metrics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_configuration/test_create_configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_configuration/test_create_configuration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_configuration/test_create_unique_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_configuration/test_create_unique_id.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_configuration/test_initialise_configuration_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_configuration/test_initialise_configuration_id.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_configuration/test_read_configuration_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_configuration/test_read_configuration_data.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,76 +24,113 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.37509">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="collect_metrics.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/metrics/collect_metrics.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-                  <folding>
-                    <element signature="e#158#167#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_sitebuiltins.py" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/_sitebuiltins.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="169">
-                  <caret line="25" selection-start-line="25" selection-end-line="25" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="config.txt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/files/config.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="strings.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/files/strings.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="477">
-                  <caret line="76" column="73" selection-start-line="76" selection-start-column="73" selection-end-line="76" selection-end-column="73" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="TODO" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/files/TODO">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="69" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="69" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="test_collect_metrics.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tests/test metrics/test_collect_metrics.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-                  <folding>
-                    <element signature="e#0#15#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="create_unique_id.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configuration/create_unique_id.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_initialise_configuration_id.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/test_configuration/test_initialise_configuration_id.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+              <folding>
+                <element signature="e#58#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_create_configuration.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/test_configuration/test_create_configuration.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#61#76#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TODO" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/files/TODO">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/files/strings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="76" column="73" selection-start-line="76" selection-start-column="73" selection-end-line="76" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_create_unique_id.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/test_configuration/test_create_unique_id.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="15" column="71" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_read_configuration_data.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/test_configuration/test_read_configuration_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="15" column="71" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_collect_metrics.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/test_metrics/test_collect_metrics.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-32">
+              <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+              <folding>
+                <element signature="e#62#71#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create_configuration.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configuration/create_configuration.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+              <folding>
+                <element signature="e#85#94#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="collect_metrics.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/metrics/collect_metrics.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-15">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="e#158#167#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -126,12 +165,10 @@
         <option value="$PROJECT_DIR$/initialise/create_configuration.py" />
         <option value="$PROJECT_DIR$/initialise/initialise_configuration.py" />
         <option value="$PROJECT_DIR$/tests/TestCreateConfiguration.py" />
-        <option value="$PROJECT_DIR$/tests/test_main.py" />
         <option value="$PROJECT_DIR$/files/__init__.py" />
         <option value="$PROJECT_DIR$/tests/__init__.py" />
         <option value="$PROJECT_DIR$/files/config.txt" />
         <option value="$PROJECT_DIR$/metrics/__init__.py" />
-        <option value="$PROJECT_DIR$/__main__.py" />
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/metrics/rabbit_connection.py" />
         <option value="$PROJECT_DIR$/tests/test_run_metric_function.py" />
@@ -147,16 +184,23 @@
         <option value="$PROJECT_DIR$/tests/test_create_configuration.py" />
         <option value="$PROJECT_DIR$/tests/test_create_unique_id.py" />
         <option value="$PROJECT_DIR$/tests/test_initialise_configuration_id.py" />
-        <option value="$PROJECT_DIR$/configuration/read_configuration_data.py" />
-        <option value="$PROJECT_DIR$/files/TODO" />
         <option value="$PROJECT_DIR$/metrics/collect_metrics.py" />
+        <option value="$PROJECT_DIR$/tests/test_configuration/test_create_unique_id.py" />
+        <option value="$PROJECT_DIR$/tests/test_configuration/test_create_configuration.py" />
+        <option value="$PROJECT_DIR$/tests/test_configuration/test_read_configuration_data.py" />
+        <option value="$PROJECT_DIR$/metrics/packets.py" />
+        <option value="$PROJECT_DIR$/__main__.py" />
+        <option value="$PROJECT_DIR$/tests/test metrics/test_packets.py" />
+        <option value="$PROJECT_DIR$/tests/test_main.py" />
+        <option value="$PROJECT_DIR$/configuration/read_configuration_data.py" />
+        <option value="$PROJECT_DIR$/tests/test_configuration/test_initialise_configuration_id.py" />
         <option value="$PROJECT_DIR$/tests/test metrics/test_collect_metrics.py" />
+        <option value="$PROJECT_DIR$/files/TODO" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
+    <option name="x" value="-8" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
   </component>
@@ -176,34 +220,7 @@
             <path>
               <item name="Client" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project 1" type="462c0819:PsiDirectoryNode" />
-              <item name="configuration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project 1" type="462c0819:PsiDirectoryNode" />
               <item name="files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project 1" type="462c0819:PsiDirectoryNode" />
-              <item name="metrics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project 1" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project 1" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="test metrics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project 1" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="test_configuration" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -218,6 +235,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programming\Cloudbase\Project 1\tests\test metrics" />
       <recent name="D:\Programming\Cloudbase\Project 1\tests\test_configuration" />
       <recent name="D:\Programming\Cloudbase\Project 1\configuration" />
       <recent name="D:\Programming\Cloudbase\Project 1" />
@@ -235,7 +253,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_collect_metrics.py">
+  <component name="RunManager" selected="Python.__main__">
     <configuration name="__main__" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Client" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -254,38 +272,46 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="initialise_configuration" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests in D:/Programming/Cloudbase/Project 1/tests/da" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Client" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/configuration" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/da" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/configuration/initialise_configuration.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/da&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <configuration name="Unittests in test_collect_metrics.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Client" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/test metrics" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/da" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test metrics/test_collect_metrics.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_metrics/test_collect_metrics.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="Unittests in test_create_unique_id.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_configuration" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Client" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/test_configuration" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_configuration&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration name="Unittests in tests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Client" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -295,36 +321,23 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_configuration/test_create_unique_id.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
-    <configuration name="Unittests in test_initialise_configuration_id.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="Client" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_configuration/test_initialise_configuration_id.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests in test_create_unique_id.py" />
-      <item itemvalue="Python tests.Unittests in test_initialise_configuration_id.py" />
-      <item itemvalue="Python.initialise_configuration" />
       <item itemvalue="Python.__main__" />
+      <item itemvalue="Python tests.Unittests in tests" />
+      <item itemvalue="Python tests.Unittests in test_configuration" />
+      <item itemvalue="Python tests.Unittests in D:/Programming/Cloudbase/Project 1/tests/da" />
       <item itemvalue="Python tests.Unittests in test_collect_metrics.py" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in test_collect_metrics.py" />
         <item itemvalue="Python.__main__" />
-        <item itemvalue="Python tests.Unittests in test_initialise_configuration_id.py" />
-        <item itemvalue="Python tests.Unittests in test_create_unique_id.py" />
-        <item itemvalue="Python.initialise_configuration" />
+        <item itemvalue="Python tests.Unittests in tests" />
+        <item itemvalue="Python tests.Unittests in test_collect_metrics.py" />
+        <item itemvalue="Python tests.Unittests in D:/Programming/Cloudbase/Project 1/tests/da" />
+        <item itemvalue="Python tests.Unittests in test_configuration" />
       </list>
     </recent_temporary>
   </component>
@@ -342,52 +355,52 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_collect_metrics_py - 2018.08.07 at 16h 56m 44s.xml">
+    <history-entry file="Unittests_in_test_packets_py - 2018.08.07 at 17h 16m 24s.xml">
+      <configuration name="Unittests in test_packets.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_packets_py - 2018.08.07 at 17h 19m 02s.xml">
+      <configuration name="Unittests in test_packets.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests - 2018.08.07 at 17h 22m 39s.xml">
+      <configuration name="Unittests in tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_main_py - 2018.08.07 at 17h 29m 19s.xml">
+      <configuration name="Unittests in test_main.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_main_py - 2018.08.07 at 17h 30m 10s.xml">
+      <configuration name="Unittests in test_main.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests - 2018.08.07 at 17h 31m 56s.xml">
+      <configuration name="Unittests in tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_configuration - 2018.08.07 at 18h 29m 37s.xml">
+      <configuration name="Unittests in test_configuration" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_metrics - 2018.08.07 at 18h 29m 42s.xml">
+      <configuration name="Unittests in test metrics" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_collect_metrics_py - 2018.08.07 at 18h 39m 14s.xml">
       <configuration name="Unittests in test_collect_metrics.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_collect_metrics_py - 2018.08.07 at 16h 56m 55s.xml">
-      <configuration name="Unittests in test_collect_metrics.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_collect_metrics_py - 2018.08.07 at 16h 57m 17s.xml">
-      <configuration name="Unittests in test_collect_metrics.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_collect_metrics_py - 2018.08.07 at 16h 57m 18s.xml">
-      <configuration name="Unittests in test_collect_metrics.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_collect_metrics_py - 2018.08.07 at 16h 57m 38s.xml">
-      <configuration name="Unittests in test_collect_metrics.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_collect_metrics_py - 2018.08.07 at 16h 57m 57s.xml">
-      <configuration name="Unittests in test_collect_metrics.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_collect_metrics_py - 2018.08.07 at 16h 58m 09s.xml">
-      <configuration name="Unittests in test_collect_metrics.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_collect_metrics_py - 2018.08.07 at 16h 58m 21s.xml">
-      <configuration name="Unittests in test_collect_metrics.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_collect_metrics_py - 2018.08.07 at 16h 59m 05s.xml">
-      <configuration name="Unittests in test_collect_metrics.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_collect_metrics_py - 2018.08.07 at 16h 59m 33s.xml">
+    <history-entry file="Unittests_in_test_collect_metrics_py - 2018.08.07 at 18h 41m 20s.xml">
       <configuration name="Unittests in test_collect_metrics.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-6" y="0" width="781" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.095703125" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.20599739" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.18684895" side_tool="true" visible="true" weight="0.26344827" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.1875" side_tool="true" weight="0.26344827" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4986979" weight="0.32965517" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.81315106" visible="true" weight="0.26344827" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8125" visible="true" weight="0.26638773" />
       <window_info id="Structure" order="1" sideWeight="0.5016611" side_tool="true" weight="0.15039062" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49804688" weight="0.39724138" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49739584" weight="0.39724138" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -398,17 +411,17 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.17903645" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.095703125" />
       <window_info id="Structure" order="1" sideWeight="0.5016611" side_tool="true" weight="0.15039062" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34068966" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8125" visible="true" weight="0.26344827" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32965517" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39724138" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4986979" weight="0.32965517" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49739584" weight="0.39724138" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.1875" side_tool="true" visible="true" weight="0.26344827" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -424,23 +437,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/metrics/rabbit_connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_collect_metrics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10047">
@@ -575,7 +571,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/initialise/__inint.py" />
     <entry file="file://$PROJECT_DIR$/initialise/config.txt" />
-    <entry file="file://$PROJECT_DIR$/tests/test_main.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/threading.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-526">
@@ -605,13 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/metrics/rabbit_connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_collect_metrics.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -629,47 +617,160 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_configuration/test_create_configuration.py">
+    <entry file="file://$PROJECT_DIR$/configuration/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
-          <folding>
-            <element signature="e#61#76#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_configuration/test_read_configuration_data.py">
+    <entry file="file://$PROJECT_DIR$/configuration/initialise_configuration.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        <state relative-caret-position="119">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_configuration/test_create_unique_id.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="63" selection-start-column="63" selection-end-column="63" />
+        <state relative-caret-position="152">
+          <caret line="821" selection-start-line="821" selection-end-line="821" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/_sitebuiltins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test metrics/test_packets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/metrics/packets_send.py">
+    <entry file="file://$PROJECT_DIR$/files/config.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="102">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metrics/rabbit_connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configuration/read_configuration_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding>
+            <element signature="e#110#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metrics/packets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="67" lean-forward="true" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
           <folding>
             <element signature="e#267#278#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configuration/__init__.py">
+    <entry file="file://$PROJECT_DIR$/__main__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#48#126#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_configuration/test_create_configuration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#61#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_configuration/test_create_unique_id.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="71" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_configuration/test_initialise_configuration_id.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+            <element signature="e#58#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_configuration/test_read_configuration_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="15" column="71" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_metrics/test_collect_metrics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32">
+          <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+          <folding>
+            <element signature="e#62#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metrics/collect_metrics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#158#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/TODO">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -685,96 +786,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/configuration/create_unique_id.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="311">
           <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/__main__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configuration/initialise_configuration.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_configuration/test_initialise_configuration_id.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/config.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/files/strings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
+        <state relative-caret-position="345">
           <caret line="76" column="73" selection-start-line="76" selection-start-column="73" selection-end-line="76" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configuration/read_configuration_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-          <folding>
-            <element signature="e#110#119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="821" selection-start-line="821" selection-end-line="821" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/TODO">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="69" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/_sitebuiltins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metrics/collect_metrics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#158#167#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test metrics/test_collect_metrics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

@@ -13,8 +13,9 @@ class TestCreateId(unittest.TestCase):
     def setUpClass(cls):
         """Initialises the class variables and ID handler."""
 
-        cls.root_path = os.path.dirname(os.path.abspath(__file__))[:-5]
+        cls.root_path = os.path.dirname(os.path.abspath(__file__))[:-24]
         cls.id_path = os.path.join(cls.root_path, "files\\id.txt")
+        print(cls.id_path)
         cls.id_handler = UniqueID()
 
     def test_validate_id_file(self):

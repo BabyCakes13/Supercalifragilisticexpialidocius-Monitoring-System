@@ -2,7 +2,7 @@
 the config.txt is correctly read and handled."""
 import unittest
 import os
-from configuration.read_configuration_data import ConfigurationFileReader
+from configuration.read_configuration_data import ReaderHandler
 from files.strings import get_configuration_file_form
 
 
@@ -12,8 +12,8 @@ class TestReadConfiguration(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.reader = ConfigurationFileReader()
-        cls.root_path = os.path.dirname(os.path.abspath(__file__))[:-5]
+        cls.reader = ReaderHandler()
+        cls.root_path = os.path.dirname(os.path.abspath(__file__))[:-24]
         cls.config_path = os.path.join(cls.root_path, "files\\config.txt")
 
     def test_get_metrics(self):

@@ -1,7 +1,7 @@
 """Main module, this starts the application"""
 
 from configuration.initialise_configuration import initialise_configuration_id
-from metrics.packets_send import PacketHandler
+from metrics.packets import PacketHandler
 
 
 def initialise():
@@ -9,7 +9,8 @@ def initialise():
     Starts reading metrics and sending them to the RabbitMQ server."""
 
     initialise_configuration_id()
-    PacketHandler()
+    packet_handler = PacketHandler()
+    packet_handler.set_packet_data()
 
 
 initialise()

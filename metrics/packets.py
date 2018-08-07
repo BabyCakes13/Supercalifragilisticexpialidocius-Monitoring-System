@@ -8,7 +8,7 @@ from datetime import datetime
 from files.strings import get_sent_time_format, get_data_names
 from metrics.rabbit_connection import RabbitConnection
 from metrics.collect_metrics import Metrics
-from configuration.read_configuration_data import ConfigurationFileReader
+from configuration.read_configuration_data import ReaderHandler
 from configuration.create_unique_id import UniqueID
 
 
@@ -23,7 +23,7 @@ class PacketHandler:
         Uses the given port and address to connect to the rabbit queue
         and sends the metrics dictionary."""
 
-        self.reader = ConfigurationFileReader()
+        self.reader = ReaderHandler()
         self.packet = {}
         self.rabbit_connection = False
         self.address = self.reader.get_address()
@@ -31,8 +31,6 @@ class PacketHandler:
 
         unique_id = UniqueID()
         self.packet[get_data_names()[4]] = str(unique_id.read_id())
-
-        self.set_packet_data()
 
     def set_packet_data(self):
         """Stores data which is not changing in the class attributes.

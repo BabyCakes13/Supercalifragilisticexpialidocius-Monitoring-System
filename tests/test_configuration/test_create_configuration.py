@@ -12,7 +12,7 @@ class TestCreateConfigurationFile(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
 
-        cls.root_path = os.path.dirname(os.path.abspath(__file__))[:-5]
+        cls.root_path = os.path.dirname(os.path.abspath(__file__))[:-24]
         cls.config_path = os.path.join(cls.root_path, "files\\config.txt")
 
         cls.test = Configuration()
