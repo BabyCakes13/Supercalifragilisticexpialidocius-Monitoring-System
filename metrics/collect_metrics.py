@@ -30,21 +30,26 @@ class Metrics:
 
         for index in range(len(self.metrics)):
             if self.metrics[index] == "TRUE":
-                self.run_metric_function(index=index)
+
+                self.call_metric_functions(index=index)
+
         return self.metric_values
 
-    def run_metric_function(self, index):
+    def call_metric_functions(self, index):
         """Calls the right functions for each metric name."""
 
         if index == 0:
             self.metric_values[get_data_names()[0]] = \
                 psutil.disk_usage(os.path.abspath(os.sep))
-        if index == 1:
+        elif index == 1:
             self.metric_values[get_data_names()[1]] = \
                 psutil.cpu_percent(interval=1, percpu=True)
-        if index == 2:
+        elif index == 2:
             self.metric_values[get_data_names()[2]] = \
                 psutil.virtual_memory()
-        if index == 3:
+        elif index == 3:
             self.metric_values[get_data_names()[3]] = \
                 psutil.cpu_stats()
+        else:
+            print("Wrong value given to the metric name.")
+            exit(2)
